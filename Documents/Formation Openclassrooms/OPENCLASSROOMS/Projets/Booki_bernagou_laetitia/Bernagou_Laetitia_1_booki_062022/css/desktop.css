@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   font-family: 'Raleway', sans-serif;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+
+
+/* Header */
+
+header {
+   display: flex;
+   justify-content: space-between;
+}
+
+#logo {
+   height: 50px;
+   margin: 45px 0px 0px 70px;
+}
+
+nav ul {
+   display: flex;
+}
+
+nav a {
+   display: block;
+   border-top: 3px solid transparent;
+   text-decoration: none;
+   color: black;
+   padding: 50px 50px 30px 50px;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+nav a:hover {
+   border-top: 3px solid #0065fc;
+   color: #0065fc;
+}
+
+
+
+
+
+/* Main */
+
+main {
+   padding-top: 20px;
+   width: 93%;
+   margin: auto;
+}
+
+h1 {
+   font-size: 22px;
+   font-weight: 700;
+   text-align: left;
+}
+
+main h1+p {
+   text-align: left;
+   padding-top: 10px;
+   font-weight: 500;
+}
+
+
+
+
+.lieu .gps,
+.hebergement,
+.populaire,
+footer {
+   background-color: #f2f2f2
+}
+
+
+
+
+/* Recherche */
+
+.lieu {
+   display: flex;
+   margin-top: 20px;
+
+}
+
+.lieu .gps {
+   font-size: 18px;
+   border-radius: 15px 0px 0px 15px;
+}
+
+.gps,
+button {
+   padding: 20px;
+}
+
+.champ {
+   border: 2px solid #f2f2f2;
+   flex-basis: 25%;
+}
+
+.champ input {
+   font-size: 20px;
+   font-weight: 700;
+   border: none;
+   padding: 15px;
+}
+
+.champ input::placeholder {
+   color: black;
+}
+
+button {
+   background-color: #0065fc;
+   border: 0;
+   color: white;
+   margin-left: -10px;
+   font-size: 18px;
+   font-weight: 600;
+   border-radius: 0px 15px 15px 0px;
+   cursor: pointer;
+}
+
+button i {
+   visibility: hidden;
+   position: absolute;
+}
+
+
+
+
+
+
+.filtre li,
+.filtre i,
+#icon_info,
+.hebergement,
+.populaire {
+   border-radius: 25px;
+}
+
+
+
+
+/* Filtres */
+
+.filtre {
+   display: flex;
+   margin-top: 40px;
+   font-size: 18px;
+}
+
+.filtre p {
+   margin-top: 15px;
+   margin-right: 20px;
+   font-weight: bold;
+}
+
+
+.filtre ul {
+   display: flex;
+   cursor: pointer;
+}
+
+.filtre li {
+   display: flex;
+   margin: 0px 15px 15px 0;
+   box-shadow: inset 0 0 0 2px lightgray;
+}
+
+.filtre i {
+   color: #0065fc;
+   width: 20px;
+   height: 20px;
+   background-color: #deebfc;
+   padding: 12px;
+
+}
+
+.filtre div {
+   font-weight: bold;
+   margin: 10px 15px;
+   position: relative;
+}
+
+.filtre li:hover {
+   background-color: #0065fc;
+   opacity: 0.7;
+   color: #deebfc;
+   box-shadow: none;
+
+}
+
+
+
+
+
+/* Info */
+
+.info {
+   display: flex;
+   padding-top: 10px;
+}
+
+#icon_info {
+   border: 2px solid #f2f2f2;
+   color: #0065fc;
+   padding: 5px 10px;
+   font-size: 12px;
+}
+
+.info p {
+   margin-top: 5px;
+   margin-left: 10px;
+   font-weight: 500;
+}
+
+
+
+
+
+/* Chambres */
+
+#chambres {
+   display: flex;
+}
+
+.card,
+.box1,
+.box2 #site2,
+.box2 #site3,
+.box2 #site4,
+.box2 #site5 {
+   border-radius: 20px;
+}
+
+
+
+
+
+/* Hebergement */
+
+.hebergement {
+   margin-top: 25px;
+   padding: 50px 20px 0px 40px;
+   flex-basis: 66%;
+   margin-right: 30px;
+   margin-top: 40px;
+}
+
+
+h2 {
+   font-size: 22px;
+   font-weight: 700;
+   padding-bottom: 20px;
+   padding-left: 2px;
+}
+
+.hebergement .hotel {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.hebergement .diapo {
+   width: 33%;
+}
+
+.hebergement .card {
+   display: inline-block;
+   padding: 5px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   background-color: white;
+   box-shadow: 1px 1px 20px #d4d4d4;
+   width: 90%;
+   height: 200px;
+   cursor: pointer;
+   transform: scale(1);
+   transition-property: transform;
+   transition-duration: 300ms;
+}
+
+.card,
+.box1,
+#site2,
+#site3,
+#site4,
+#site5,
+#site6 {
+   cursor: pointer;
+   transform: scale(1);
+   transition-property: transform;
+   transition-duration: 300ms;
+}
+
+.hebergement .card:hover {
+   box-shadow: 3px 3px 15px gray;
+   color: #0065fc;
+}
+
+.card:hover,
+.box1:hover,
+#site2:hover,
+#site3:hover,
+#site4:hover,
+#site5:hover,
+#site6:hover {
+   transform: scale(1.05);
+}
+
+.hebergement img {
+   width: 100%;
+   height: 120px;
+   border-radius: 15px 15px 0 0;
+   margin: 0px;
+   object-fit: cover;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   font-size: 14px;
+}
+
+.hebergement .card__name {
+   margin-left: 10px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+h3 {
+   font-weight: 700;
+   font-size: 16px;
+   margin-bottom: 5px;
+}
+
+.etoiles {
+   color: #0065fc;
+   font-size: 12px;
+   margin-left: 10px;
+}
+
+.etoiles i {
+   padding-right: 1px;
+}
+
+.etoiles span {
+   color: lightgray;
+}
+
+#afficher p {
+   font-size: 18px;
+   font-weight: 700;
+   margin: 15px 0px 40px 10px;
+}
+
+
+
+
+
+/* Populaire */
+
+.populaire {
+   display: block;
+   margin-top: 40px;
+   padding: 40px 30px 20px 30px;
+   flex-basis: 33%;
+
+}
+
+#titre_etoile {
+   display: flex;
+   justify-content: space-between;
+}
+
+.populaire .hotel {
+   display: block;
+   justify-content: center;
+}
+
+.populaire .card {
+   display: flex;
+   padding: 3px 5px 3px 5px;
+   margin-bottom: 20px;
+   background-color: white;
+   box-shadow: 1px 1px 20px #d4d4d4;
+}
+
+.populaire img {
+   width: 150px;
+   height: 145px;
+   border-radius: 15px 0px 0px 15px;
+   margin: 2px 0px 0px 0px;
+   object-fit: cover;
+}
+
+.populaire .card:hover {
+   box-shadow: 3px 3px 15px gray;
+   color: #0065fc;
+}
+
+.populaire .card__name {
+   margin: 5px auto 15px 15px;
+}
+
+.populaire .description {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.populaire .etoiles {
+   padding-left: 12px;
+   padding-bottom: 12px;
+}
+
+
+
+
+
+/* Activites */
+
+#activites h2 {
+   margin-top: 60px;
+}
+
+#activites .corps {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#activites .card__name {
+   margin-left: 15px;
+}
+
+.box1,
+.box2 #site2,
+.box2 #site3,
+.box2 #site4,
+.box2 #site5 {
+   box-shadow: 2px 2px 20px gray;
+   display: flex;
+   flex-direction: column;
+   margin-right: 20px;
+   margin-bottom: 30px;
+   background-color: white;
+   box-shadow: 1px 1px 20px #d4d4d4;
+}
+
+.box1 {
+   width: 21%;
+   height: 450px;
+}
+
+.box2 #site4 {
+   height: 210px;
+}
+
+.box2 #site5 {
+   height: 210px;
+}
+
+.box2 #site2,
+.box2 #site3,
+.box2 #site4,
+.box2 #site5 {
+   width: 352px;
+}
+
+.box2 #site2 {
+   height: 240px;
+}
+
+.box2 #site3 {
+   height: 180px;
+}
+
+#activites img {
+   border-radius: 15px 15px 0px 0px;
+   object-fit: cover;
+   width: 100%;
+}
+
+.box1 img {
+   height: 390px;
+   object-position: bottom;
+}
+
+.box2 #petite1 img {
+   height: 185px;
+}
+
+.box2 #petite2 img {
+   height: 110px;
+}
+
+.box2 #petite3 img {
+   height: 150px;
+}
+
+.box2 #petite4 img {
+   height: 155px;
+}
+
+#activites h3 {
+   margin: 15px auto;
+   font-size: 18px;
+}
+
+#activites .box1:hover,
+.box2 #site2:hover,
+.box2 #site3:hover,
+.box2 #site4:hover,
+.box2 #site5:hover {
+   box-shadow: 2px 2px 20px gray;
+}
+
+.activites a:hover {
+   color: #0065fc;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+   display: flex;
+   justify-content: left;
+   padding-left: 15px;
+}
+
+.rubrique {
+   margin: 40px;
+   width: 25%;
+}
+
+h4 {
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+footer li {
+   padding-bottom: 10px;
+}

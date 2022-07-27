@@ -1,0 +1,257 @@
+@media screen and (max-width: 768px) {
+
+
+
+   /* Header */
+
+   header {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+
+   #logo {
+      align-self: center;
+      width: 25%;
+   }
+
+   nav li {
+      width: 50%;
+   }
+
+   nav a {
+      padding: 10% 20%;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid #f2f2f2;
+      font-size: 20px;
+   }
+
+   nav a:hover {
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid #0065fc;
+      color: #0065fc;
+   }
+
+
+
+
+
+   /* Main */
+
+   main {
+      padding: 20px 0px;
+
+   }
+
+   h1 {
+      max-width: 352px;
+      margin-left: 20px;
+      font-size: 26px;
+   }
+
+   h1+p {
+      padding-left: 20px;
+      margin-bottom: 40px;
+      font-size: 20px;
+   }
+
+
+
+
+
+   /* Recherche */
+
+   .lieu {
+      padding-left: 20px;
+   }
+
+   .champ {
+      flex-basis: 50%;
+   }
+
+   button {
+      border-radius: 15px;
+   }
+
+   button i {
+      visibility: visible;
+      position: relative;
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   button span {
+      visibility: hidden;
+      position: absolute;
+   }
+
+
+
+
+
+   /* Filtre */
+
+   .filtre {
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .filtre p {
+      margin-bottom: 20px;
+      font-size: 22px;
+   }
+
+   .filtre ul {
+      flex-wrap: wrap;
+      max-width: 400px;
+   }
+
+
+
+
+
+   /* Info */
+
+   .info {
+      padding-left: 20px;
+      width: 352px;
+      font-size: 16px;
+   }
+
+   #icon_info {
+      padding: 10px 15px 0 15px;
+      font-size: 16px;
+   }
+
+
+
+
+
+   /* Chambres */
+
+   #chambres {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-left: 0;
+   }
+
+   
+
+   
+
+
+
+
+   /* Hebergement */
+
+   .hebergement {
+      width: 90%;
+      background-color: white;
+   }
+
+   .hebergement img {
+      height: 150px;
+   }
+
+   .hebergement .hotel {
+      flex-direction: column;
+   }
+
+   .hebergement .diapo {
+      width: 100%;
+   }
+
+   .hebergement .card {
+      flex-basis: 100%;
+      height: 240px;
+   }
+
+
+
+
+
+
+   /* Populaire */
+
+   .populaire .hotel {
+      display: block;
+      width: 90%;
+   }
+
+   .populaire #titre_etoile {
+      width: 90%;
+   }
+
+
+
+
+
+
+
+   /* Activites */
+
+   #activites {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 20px;
+   }
+
+   #activites h2 {
+      padding-bottom: 30px;
+      margin-left: 20px;
+      font-size: 24px;
+   }
+
+   .box1,
+   .box2 #site2,
+   .box2 #site3,
+   .box2 #site4,
+   .box2 #site5 {
+      margin-left: 20px;
+      background-color: white;
+      box-shadow: 1px 1px 20px #d4d4d4;
+      border-radius: 20px;
+      height: 300px;
+      margin-bottom: 30px;
+      width: 85%;
+   }
+
+   #activites .box2 {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .box1 img,
+   .box2 #site2 img,
+   .box2 #site3 img,
+   .box2 #site4 img,
+   .box2 #site5 img {
+      height: 230px;
+      border-radius: 15px 15px 0 0;
+      margin: 0px 0px 0px 0px;
+      object-fit: cover;
+      object-position: 0% 45%;
+   }
+
+   #activites .corps {
+      display: flex;
+      flex-direction: column;
+   }
+
+
+
+
+
+   /* Footer */
+
+   footer {
+      flex-direction: column;
+   }
+
+   footer .rubrique {
+      width: 100%;
+   }
+
+}

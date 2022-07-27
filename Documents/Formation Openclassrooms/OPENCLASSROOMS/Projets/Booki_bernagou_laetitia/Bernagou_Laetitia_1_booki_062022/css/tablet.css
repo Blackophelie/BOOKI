@@ -1,0 +1,102 @@
+@media screen and (max-width: 992px) {
+
+   /* Main */
+
+   main {
+      width: 100%;
+   }
+
+   h1,
+   h1+p,
+   .filtre,
+   .lieu,
+   .info {
+      margin-left: 30px;
+   }
+
+
+
+
+
+
+   /* Filtre */
+
+   .filtre {
+      display: block;
+   }
+
+   .filtre p {
+      margin-bottom: 20px;
+   }
+
+
+
+
+
+
+   /* Chambres */
+
+   #chambres {
+      flex-direction: column-reverse;
+      margin-top: 20px;
+   }
+
+   .hebergement {
+      background-color: transparent;
+   }
+
+   .hebergement,
+   .populaire {
+      width: 100%;
+      border-radius: 0px;
+   }
+
+   .hebergement .card_name,
+   .populaire .card_name {
+      margin-bottom: 0px;
+   }
+
+
+
+
+   /* Populaire */
+
+   .populaire .hotel {
+      display: flex;
+   }
+
+   .populaire .hotel .diapo {
+      width: 30%;
+      margin-right: 3%;
+   }
+
+   .populaire .card {
+      height: 80%;
+   }
+
+
+
+
+
+   /* Activites */
+
+   #activites {
+      margin-left: 40px;
+   }
+
+   .box1 {
+      width: 50%;
+   }
+
+
+
+
+
+
+   /* Footer */
+
+   footer {
+      width: 100%;
+   }
+
+}
